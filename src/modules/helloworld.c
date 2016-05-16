@@ -334,6 +334,7 @@ int HelloMoreExpire_RedisCommand(RedisModuleCtx *ctx, RedisModuleString **argv, 
  * another time backward. The two scores, returned as a two element array,
  * should match.*/
 int HelloZsumRange_RedisCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc) {
+    // argc - argument count
     double score_start, score_end;
     if (argc != 4) return RedisModule_WrongArity(ctx);
 
